@@ -41,7 +41,7 @@ public class ICalEvent {
 		public Calendar getEndDate() { return this.endDate; }
 		public String getDescription() { return this.description; }
 		public String getLocation() { return this.location; }
-		public URL getUrlAddress() { return this.urlAddress; }
+		public URL getUrlAddress() { return this.urlAddress; } s
 	}
 	
 	private ICalData iCalData;
