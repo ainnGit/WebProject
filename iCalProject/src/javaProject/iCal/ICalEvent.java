@@ -21,14 +21,16 @@ public class ICalEvent {
 			startDate = null;
 			endDate = null;
 			description = "The date is not set!";
+			location = "";
 			urlAddress = null;
 		}
 		
-		public ICalData(String title, Calendar startDate, Calendar endDate, String desc, URL address){
+		public ICalData(String title, Calendar startDate, Calendar endDate, String desc, String location, URL address){
 			this.title = title;
 			this.startDate = startDate;
 			this.endDate = endDate;
 			this.description = desc;
+			this.location = location;
 			this.urlAddress = address;
 		}
 		
@@ -45,7 +47,7 @@ public class ICalEvent {
 	private ICalData iCalData;
 	
 	public ICalEvent(){ iCalData = new ICalData(); }
-	public ICalEvent(String title, Calendar startDate, Calendar endDate, String desc, URL address){
-		iCalData = new ICalData(title, startDate, endDate, desc, address);
+	public ICalEvent(String title, Calendar startDate, Calendar endDate, String desc, String location, URL address){
+		iCalData = new ICalData(title, startDate, endDate, desc, location, address);
 	}
 }
